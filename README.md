@@ -4,10 +4,8 @@
 ```
 dotnet new webapp --name aspnetcore-docker-webapp --output ./ --dry-run 
 ```
-Change `localhost` to `0.0.0.0`
+Change `localhost` to `0.0.0.0` in file `Properties/launchSettings.json`
 
-wget https://download.docker.com/linux/debian/dists/stretch/pool/stable/amd64/docker-ce_19.03.9~3-0~debian-stretch_amd64.deb
-sudo dpkg -i docker-ce_19.03.9~3-0~debian-stretch_amd64.deb
-
-
-wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz
+## Publish to Docker Hub 
+The GitHub Action will automatically publish to Docker Hub
+- https://hub.docker.com/r/jibinpb/aspnetcore-docker-webapp
